@@ -1,0 +1,13 @@
+# Creata '.env' file as in '.env.example'
+
+SHOPIFY_APP_SECRET= 
+
+REFERSION_PUBLIC_KEY=
+REFERSION_SECRET_KEY=
+
+# To test webhooks in local I used 'ngrok' 
+
+WEBHOOK URL :
+{proxyURL}/webhook
+
+# whole report of Project once executed can be found in "shopify.log"
