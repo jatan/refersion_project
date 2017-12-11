@@ -59,7 +59,7 @@ class affiliateController extends Controller
 		try {
 			$response = $client->request($method, $url, $parameter, ['http_errors' => false]);
 			$logDetails['level']    = "DEBUG";
-			$logDetails['message']  = "SUCCESS : ".json_encode($response->getBody());
+			$logDetails['message']  = "SUCCESS : ".$response->getBody();
 	    } catch (\Exception $e) {
 			$logDetails['level']    = "ERROR";
 			$logDetails['message']  = "EXCEPTION : ".$e->getMessage();

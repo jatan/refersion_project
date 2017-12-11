@@ -25,6 +25,7 @@ class shopifyVerifyWebhook
         if(! $this -> verify_webhook($data, $hmac_header)){
             // when Not verified, Log related details
             Log::emergency('Notification from un-verified Source : '.json_encode($_SERVER));
+            die;
         }
         Log::debug('Webhook Verified!!');
         // Adds Passed Data in request
